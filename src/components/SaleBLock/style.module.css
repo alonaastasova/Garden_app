@@ -1,0 +1,37 @@
+.salesContainer {
+    width: 1110px;
+    margin: 20px auto;
+    padding: 10px;
+}
+
+.header {
+    font-size: 25px;
+    font-weight: 700;
+}
+
+.cardContainer {
+    margin: 20px auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+}
+
+.moreButton {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.moreButton button {
+    width: 225px;
+    height: 50px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.3s ease-out;
+}
+
+.moreButton button:hover{
+    box-shadow: 0px 5px 10px rgba(204, 204, 204, 0.568);
+    background-color: rgba(204, 204, 204, 0.568);
+}

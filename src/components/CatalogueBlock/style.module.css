@@ -1,0 +1,41 @@
+.container {
+    width: 1110px;
+    height: 370px;
+    margin: 20px auto;
+}
+
+.header {
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+    gap: 100px;
+}
+
+.header p {
+    font-size: 25px;
+    font-weight: 700;
+}
+
+.header button {
+    color: #8B8B8B;
+    padding: 5px;
+    width: 120px;
+    font-size: 13px;
+    font-weight: 700;
+    background: none;
+    border: 2px solid #8B8B8B;
+    cursor: pointer;
+    transition: 0.5s ease-out;
+}
+
+.header button:hover {
+    background-color: #8b8b8b8c;
+    color: white;
+}
+
+.cardContainer {
+    margin: 20px auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+}

@@ -1,0 +1,69 @@
+.search {
+    max-width: 850px;
+    display: flex;
+    flex-direction: row;
+    gap: 70px;
+    padding-bottom: 30px;
+}
+
+.search input {
+    height: 35px;
+    font-size: 15px;
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid black;
+}
+
+.search select {
+    height: 35px;
+    font-size: 15px;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.priceBlock {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 15px;
+}
+
+.priceBlock input{
+    width: 100px;
+}
+
+.priceBlock p{
+    font-weight: 600;
+}
+
+.checkBlock {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 15px;
+}
+
+.checkBlock p{
+    font-weight: 600;
+}
+
+.checkBlock input {
+    width: 30px;
+}
+
+.sortBlock {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 15px;
+}
+
+.sortBlock p{
+    font-weight: 600;
+}
+
+@media (max-width: 500px){
+    .search{
+        flex-direction: column;
+    }
+}

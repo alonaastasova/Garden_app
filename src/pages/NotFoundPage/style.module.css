@@ -1,0 +1,9 @@
+.image {
+    background-position: center;
+    width: 1110px;
+    margin: 20px auto;
+    height: 600px;
+    background-image: url('../../media/404NotFound.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+}

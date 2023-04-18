@@ -1,0 +1,119 @@
+.nav {
+    width: 1110px;
+    margin: 20px auto;
+    height: 60px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.firstBlock{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 60px;
+}
+
+.firstBlock button {
+    background-color: #339933;
+    color: white;
+    width: 120px;
+    height: 50px;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 13px;
+    cursor: pointer;
+}
+
+.secondBlock{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 150px;
+    margin: 10px;
+}
+
+.secondBlock a{
+    text-decoration: none;
+    color: black;
+}
+
+.links {
+    display: flex;
+    font-size: 13px;
+    gap: 50px;
+}
+
+.all_links{
+    display: flex;
+}
+
+.nav_btn{
+    display: none;
+    width: 40px;
+    height: 40px;
+    background-color: transparent;
+    border: 2px solid white;
+    color: black;
+    font-size: 35px;
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    .nav {
+        position: relative;
+    }
+
+    .all_links a {
+        border-top: none;
+        border-left: none;
+        border-right: none;
+    }
+
+    .all_links{
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        gap: 5px;
+        height: auto;
+        opacity: 0;
+        pointer-events: none;
+        transition-duration: 0.5s;
+        border: 1px solid black;
+        background-color: white;
+        width: 180px;
+        height: 180px;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .links {
+        flex-direction: column;
+        gap: 15px;
+        font-size: 18px;
+    }
+
+    .links a {
+        border-bottom: 1px solid black;
+        text-align: center;
+    }
+
+    .secondBlock {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .links_show{
+        transform: translateY(100%);
+        opacity: 1;
+    }
+
+    .links_show a {
+        pointer-events: auto;
+    }
+
+    .nav_btn{
+        display: flex;
+    }
+}
